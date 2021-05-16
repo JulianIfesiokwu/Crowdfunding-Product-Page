@@ -20,7 +20,8 @@
     <div class="landing">
       <!-- Header -->
       <header>
-        <img src="" class="logo" alt="">
+        <a href="./index.html"><img src="./images/logo.svg" class="logo" alt=""></a>
+
         <nav>
           <ul>
             <li>About</li>
@@ -33,51 +34,59 @@
     </div>
 
     <div class="product">
-      <img src="" alt="">
-
       <!-- Product overview -->
       <div class="product-overview">
+        <img class="small-logo" src="./images/logo-mastercraft.svg" alt="">
         <h1>Mastercraft Bamboo Monitor Riser</h1>
-        <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+        <p class="about-product">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div class="save-project">
-          <button>  Back this project</button>
+          <button class="cta">Back this project</button>
 
           <!-- Bookmark -->
           <div class="bookmark">
-            <img src="" alt="bookmark project">
-            <p>Bookmark</p>
+            <a href=""><img class="bookmark-icon" src="./images/icon-bookmark.svg" alt="bookmark project"><span class="bookmark">Bookmark</span>
+            </a>
+            <!-- <button class="bookmark"><img class="bookmark-icon" src="./images/icon-bookmark.svg" alt="bookmark project"><span >Bookmark</span></button> -->
+            
           </div>
         </div>
       </div>
 
       <!-- Product metrics -->
       <div class="product-metrics">
-        <div class="contribution">
-          <p class="bold">$89,914</p>
-          <p> of $100,000 backed</p>
+        <div class="metric-details">
+          <div class="contribution">
+            <p class="bold">$89,914</p>
+            <p class="light-text"> of $100,000 backed</p>
+          </div>
+  
+          <div class="backers">
+            <p class="bold">5,007</p>
+            <p class="light-text"> total backers</p>
+          </div>
+  
+          <div class="days-left">
+            <p class="bold">56</p>
+            <p class="light-text"> days left</p>
+          </div>
         </div>
 
-        <div class="backers">
-          <p class="bold">5,007</p>
-          <p> total backers</p>
+        <div class="metric-bar">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </div>
-
-        <div class="days-left">
-          <p class="bold">56</p>
-          <p> days left</p>
-        </div>
+        
       </div>
 
       <!-- About -->
       <div class="about">
         <h2>About this project</h2>
 
-        <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+        <p class="paragraph">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
           to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
           your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
         </p>
 
-        <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+        <p class="paragraph">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
           to allow notepads, pens, and USB sticks to be stored under the stand.
         </p>
 
@@ -95,7 +104,7 @@
 
           <div class="selection-price">
             <p><span class="bold">101</span> left</p>
-            <button>Select Reward</button>
+            <button class="cta">Select Reward</button>
           </div>
         </div>
 
@@ -113,7 +122,7 @@
 
           <div class="selection-price">
             <p><span class="bold">64</span> left</p>
-            <button>Select Reward</button>
+            <button class="cta">Select Reward</button>
           </div>
         </div>
 
@@ -131,15 +140,12 @@
 
           <div class="selection-price">
             <p><span class="bold">0</span> left</p>
-            <button>Out of Stock</button>
+            <button class="cta">Out of Stock</button>
           </div>
         </div>
 
 
       </div>
-
-
-
     </div>
 
 
