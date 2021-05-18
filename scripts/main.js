@@ -1,7 +1,10 @@
 const totalContributed = document.querySelector('#total-contributed');
 const slider = document.querySelector('#mySlider');
 const selectionModal = document.querySelector('#selection-modal');
+const successModal = document.querySelector('#thank-you')
+const closeBtn = document.querySelector('.close-selection-modal');
 const supportProject = document.querySelector('#select-project');
+const myModal = document.getElementById('my-modal');
 
 // Functions
 
@@ -19,10 +22,21 @@ function thousands_separators(num) {
 }
 
 function openSelectionModal() {
-    // selectionModal.style.display = 'block';
-    console.log('ass')
+    myModal.style.display = 'block';
+
+    // stop body from moving and remove scrollbars
+    document.querySelector("body").style.overflow = 'hidden';
+}
+
+// closes the selection modal
+function closeSelectionModal() {
+    myModal.style.display = 'none';
+
+    // Enables overflow on body
+    document.querySelector("body").style.overflow = 'visible';
 }
 
 
 // Event Listeners
-supportProject.addEventListener('click', openSelectionModal)
+supportProject.addEventListener('click', openSelectionModal);
+closeBtn.addEventListener('click', closeSelectionModal)
