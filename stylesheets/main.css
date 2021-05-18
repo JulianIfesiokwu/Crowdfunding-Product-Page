@@ -299,10 +299,20 @@ h2 {
     width: 90%;
     margin: 1rem auto;
     border: 1px solid rgb(223, 223, 223);
-    padding: 1rem;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
+}
+
+.pledge-details {
+    display: flex;
     flex-direction: row;
+    padding: 1rem;
+}
+
+.pledge-contribution {
+    padding: 1rem;
+    border-top: 1px solid rgb(223, 223, 223);;
 }
 
 .pledge-header {
@@ -332,6 +342,16 @@ h2 {
     margin-top: 1rem;
     line-height: 2rem;
 }
+
+.pledge-contribution p {
+    display: inline-block;
+}
+
+.continue {
+    
+}
+
+
 
 input[type=radio] {
     /* position: absolute;

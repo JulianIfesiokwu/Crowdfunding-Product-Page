@@ -5,6 +5,8 @@ const successModal = document.querySelector('#thank-you')
 const closeBtn = document.querySelector('.close-selection-modal');
 const supportProject = document.querySelector('#select-project');
 const myModal = document.getElementById('my-modal');
+const continueBtn = document.querySelector('.continue')
+const gotItBtn = document.querySelector('.got-it');
 
 // Functions
 
@@ -36,7 +38,23 @@ function closeSelectionModal() {
     document.querySelector("body").style.overflow = 'visible';
 }
 
+// Display success modal
+function showSuccessModal() {
+    successModal.style.display = 'block';
+
+    // stop body from moving and remove scrollbars
+    document.querySelector("body").style.overflow = 'hidden';
+
+}
+
+// Close success modal
+function closeSuccessModal() {
+    successModal.style.display = 'none';
+}
+
 
 // Event Listeners
 supportProject.addEventListener('click', openSelectionModal);
 closeBtn.addEventListener('click', closeSelectionModal)
+continueBtn.addEventListener('click', showSuccessModal);
+gotItBtn.addEventListener('click', closeSuccessModal)

@@ -160,15 +160,24 @@
   
         <!-- No reward -->
         <div class="pledge">
-          <div class="pledge-header">
-            <input type="radio" name="pledge" value="no-reward">
-            <span class="checkmark"></span>
+          <div class="pledge-details">
+            <div class="pledge-header">
+              <input type="radio" name="pledge" value="no-reward">
+              <span class="checkmark"></span>
+            </div>
+            
+            <div class="pledge-summary">
+              <label for="no-reward" class="big">Pledge with no reward</label>
+              <p class="pledge-offer">Choose to support us without a reward if you simply believe in our project. As a backer, 
+                you will be signed up to receive product updates via email.</p>
+            </div>
+
           </div>
           
-          <div class="pledge-summary">
-            <label for="no-reward" class="big">Pledge with no reward</label>
-            <p class="pledge-offer">Choose to support us without a reward if you simply believe in our project. As a backer, 
-              you will be signed up to receive product updates via email.</p>
+          <div class="pledge-contribution">
+            <p>Enter your pledge</p>
+            <input type="number" class="pledge-amount">
+            <button class="cta continue">continue</button>
           </div>
         </div>
   
@@ -235,7 +244,7 @@
         <h2>Thanks for your support!</h2>
         <p class="success-goal">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
           an email once our campaign is completed.</p>
-        <button class="cta">Got it!</button>
+        <button class="cta got-it">Got it!</button>
       </div>
     </div>
 
