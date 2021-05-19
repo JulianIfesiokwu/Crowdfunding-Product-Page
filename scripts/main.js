@@ -7,6 +7,7 @@ const supportProject = document.querySelector('#select-project');
 const myModal = document.getElementById('my-modal');
 const continueBtn = document.querySelector('.continue')
 const gotItBtn = document.querySelector('.got-it');
+const pledgeContribution = document.querySelector('.pledge-contribution');
 
 // Functions
 
@@ -52,9 +53,24 @@ function closeSuccessModal() {
     successModal.style.display = 'none';
 }
 
+// HightlightPledge and check radio button
+function HightlightPledge(e) {    
+    let target = e.target.closest('.pledge');
+    let childElement = target.children[1];
+    let radioBtn = target.children[0][0];
+
+    target.classList.add('green-border');
+    childElement.style.display = 'block';
+
+    console.log(target)
+    console.log(radioBtn)
+}
+
 
 // Event Listeners
 supportProject.addEventListener('click', openSelectionModal);
 closeBtn.addEventListener('click', closeSelectionModal)
 continueBtn.addEventListener('click', showSuccessModal);
-gotItBtn.addEventListener('click', closeSuccessModal)
+gotItBtn.addEventListener('click', closeSuccessModal);
+selectionModal.addEventListener('click', HightlightPledge)
+

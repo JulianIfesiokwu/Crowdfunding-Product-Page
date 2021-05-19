@@ -322,8 +322,17 @@ h2 {
 }
 
 .pledge-contribution {
+    display: none;
     padding: 1rem;
     border-top: 1px solid rgb(223, 223, 223);;
+}
+
+.green-border {
+    border: 1px solid var(--dark-cyan);
+}
+
+.pledge-contribution p {
+    display: inline-block;
 }
 
 .pledge-header {
@@ -354,12 +363,39 @@ h2 {
     line-height: 2rem;
 }
 
-.pledge-contribution p {
+
+
+.input-container {
     display: inline-block;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 0.9rem;
+    border-radius: 30px;
+    position: relative;
+    left: 45%;
+}
+
+.pledge-amount {
+    border: none;
+    outline: none;
 }
 
 .continue {
-    
+    position: relative;
+    left: 49%;
+}
+
+
+/* Hide arrows on input with number type */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
