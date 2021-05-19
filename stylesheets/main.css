@@ -271,6 +271,17 @@ h2 {
     background-color: #FFF;
 }
 
+#success-modal {
+    margin: 15% auto;
+    z-index: 2;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
 .selection-header {
     width: 90%;
     margin: 0 auto;
@@ -375,14 +386,15 @@ input[type=radio] {
 
 #success-modal {
     width: 30%;
-    margin: 0 auto;
+    margin: 15% auto;
     text-align: center;
     padding: 2rem;
     border-radius: 10px;
 }
 
 .ok-checkmark {
-    margin: 1rem 0;
+
+    margin: 1rem auto;
 }
 
 .success-goal {
@@ -392,4 +404,8 @@ input[type=radio] {
 .cta {
     margin-top: 1rem;
     padding: 1rem 2rem;
+}
+
+.got-it {
+    margin: 1rem auto
 }
