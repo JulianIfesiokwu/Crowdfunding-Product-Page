@@ -18,6 +18,7 @@
 .container {
     width: 100%;
     background-color: whitesmoke;
+    overflow: hidden;
 }
 
 .landing {
@@ -31,22 +32,42 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 nav {
-    background-color: white;
-    border-radius: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-nav ul li {
-    font-weight: 500;
-    margin: 1rem 0;
-    border-bottom: 1px solid black;
-}
-
-.close {
     display: none;
+}
+
+.hamburger-open, .hamburger-close {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.3rem;
+}
+
+.hamburger-close {
+    display: none;
+}
+
+.hamburger-links {
+    display: none;
+    position: relative;
+    right: 7.85rem;
+    top: 2.5rem;
+    width: 90vw;
+    position: relative;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    list-style-type: none;
+    z-index: 1;
+}
+.hamburger-links li {
+    padding: 1.8rem 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+li:nth-child(3) {
+    border-bottom: none;
 }
 
 .overview {
